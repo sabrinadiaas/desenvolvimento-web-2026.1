@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --cor-marfim: #FFFFE3;
+    --cor-bronze: #CE8946;
+    --cor-branca: #ffffff;
+    --cor-texto:  #522c00;
+  }
+
+  body {
+    font-family: 'Quicksand', Georgia, 'Times New Roman', Times, serif;
+    background-color: var(--cor-marfim);
+    color: var(--cor-texto);
+  }
+
+  header {
+    font-family: 'Fredoka';
+    background-color: var(--cor-bronze);
+    padding: 2rem 2rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+  }
+
+  main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--cor-branca);
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 2rem;
+    align-items: center;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo section {
+  background-color: var(--cor-bronze);
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+h2 {
+  font-family: 'Fredoka';
+  color: var(--cor-bronze);
+}
+
+h3 {
+  font-family: 'Fredoka';
+}
+
+footer {
+  background-color: var(--cor-texto);
+  color: var(--cor-bronze);
+  text-align: center;
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+}
+
+footer a {
+  color: var(--cor-marfim);
+}
