@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --verde1: #051F20;
+  --verde2: #173831;
+  --verde3: #235347;
+  --verde4: #8CB79B;
+  --verde5: #DBF0DD;
+  --verde6: #FAFCFB;
+  --branco: #ffffff;
+}
+
+body {
+  font-family: 'Quicksand', Georgia, 'Times New Roman', Times, serif;
+  background-color: var(--verde5);
+  color: var(--verde1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+h1 {
+  color: var(--verde2);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h2 {
+  color: var(--verde3);
+  margin-top: 30px;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 700;
+}
+
+ul {
+  background-color: var(--verde3);
+  color: var(--verde5);
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 15px 25px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+form {
+  background-color: var(--branco);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-top: 6px solid var(--verde2);
+}
+
+label {
+  font-weight: 700;
+  color: var(--verde2);
+  margin-top: 10px;
+}
+
+select, input[type="number"] {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+  padding: 12px;
+  border: 2px solid var(--verde5);
+  border-radius: 8px;
+  outline: none;
+  color: var(--verde1);
+  background-color: var(--verde6);
+  transition: border-color 0.3s ease;
+}
+
+select:focus, input[type="number"]:focus {
+  border-color: var(--verde4);
+}
+
+#resultado {
+  font-size: 1rem;
+  color: var(--verde2);
+  margin-top: 15px;
+  background-color: var(--branco);
+  padding: 15px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  min-width: 300px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
